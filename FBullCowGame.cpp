@@ -1,6 +1,6 @@
 #include "FBullCowGame.h"
 #include <map>
-#define TMap std::map
+#define TMap std::map // to make syntax unreal friendly
 
 FBullCowGame::FBullCowGame() {
 	Reset();
@@ -12,7 +12,7 @@ void FBullCowGame::Reset() {
 
 	MyCurrentTry = 1;
 
-	const FString HIDDEN_WORD = "muskan";
+	const FString HIDDEN_WORD = "muskan"; // this word must be an isogram
 	MyHiddenWord = HIDDEN_WORD;
 
 	return;
